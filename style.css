@@ -13,7 +13,7 @@
 }
 
 main {
-  background-color: rgba(255, 255, 255, 10%);
+  background-color: rgba(0, 0, 0, 3%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -191,10 +191,12 @@ img {
 .opinion-container {
   text-align: left;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .user-opinion{
   background-color: white;
+  border-radius: 14px;
+  padding: 24px;
 }
 
 .rating {
@@ -231,4 +233,43 @@ h5{
 .user-info{
   display: flex;
   gap: 20px;
+}
+/* focus style */
+.focus{
+  max-width: 1140px;
+  margin: 0px auto;
+  justify-items: center;
+  text-align: center;
+  margin-top: 130px;
+  background-color: white;
+  margin-bottom: 93px;
+  border-radius: 14px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.focus h2{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.focus p{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.focus button {
+  display: block;
+  border: 1px solid #4E47FF;
+  border-radius: 10px;
+  background: #4E47FF;
+  padding: 10px 35px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.focus img{
+  width: 840px;
+  height: 365px;
 }
