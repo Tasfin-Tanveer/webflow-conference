@@ -13,10 +13,9 @@
 }
 
 main {
-  background-color: rgba(0, 0, 0, 3%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 2%);
+  /* max-width: 1440px; */
+  /* if you need */
   margin: 0;
   padding: 0;
 }
@@ -29,9 +28,6 @@ header {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)),
     url("Assets/Hero-bg.png");
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   align-items: center;
   margin-bottom: 116px;
   text-align: center;
@@ -269,7 +265,104 @@ h5{
   cursor: pointer;
   transition: background 0.3s ease;
 }
+.focus button:hover{
+  background-color: transparent;
+  color: #4E47FF;
+  border-color: #4E47FF;
+}
 .focus img{
   width: 840px;
   height: 365px;
+}
+
+/* form style */
+.form{
+  max-width: 1140px;
+  margin: 0px auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  /* margin-bottom: 85px; */
+}
+.form.column{
+  width: 50%;
+}
+.form-title{
+  font-size: 97px;
+  max-width: 600px;
+}
+.form input[type="text"], textarea{
+    height: 34px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+    width: 90%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    border: none;
+}
+.form textarea{
+  padding-bottom: 60px;
+}
+.form button {
+  display: block;
+  border: 1px solid #4E47FF;
+  border-radius: 10px;
+  background: #4E47FF;
+  width: 100%;
+  padding: 10px 35px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.form button:hover{
+  background-color: transparent;
+  color: #4E47FF;
+  border-color: #4E47FF;
+}
+label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* footer style */
+.footer {
+  max-width: 1440px;
+  margin: 0px auto;
+  justify-items: center;
+  text-align: center;
+  margin-top: 85px;
+  background-color: white;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+.footer h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  color: #4E47FF;
+}
+.footer p{
+  color: #8987A1;
+  max-width: 500px;
+  padding-bottom: 25px;
+}
+nav ul{
+  display: flex;
+  gap: 50px;
+}
+nav ul li{
+  list-style: none;
+}
+nav li a{
+  text-decoration: none;
+  color: #8987A1;
+  transition: background 0.3s ease;
+}
+nav li a:hover{
+  color: #4E47FF;
 }
